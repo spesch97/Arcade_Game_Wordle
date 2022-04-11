@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Game</title>
+    <link rel="stylesheet" href="arcade_style.css">
+    <script src="arcade_main3.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <span id=w>W</span>
+            <span id=o>O</span>
+            <span id=r>R</span>
+            <span id=d>D</span>
+            <span id=l>L</span>
+            <span id=e>E</span>
+        </h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" id="letter_0_row_0" maxlength="1" autofocus onkeyup="lettersOnlyAndNextBox(this, 'letter_1_row_0')">
+                </td>
+                <td>
+                    <input type="text" id="letter_1_row_0"  maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_2_row_0')">
+                </td>
+                <td>
+                    <input type="text" id="letter_2_row_0" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_3_row_0')">
+                </td>
+                <td>
+                    <input type="text" id="letter_3_row_0" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_4_row_0')">
+                </td>
+                <td>
+                    <input type="text" id="letter_4_row_0" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_0_row_0')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="letter_0_row_1" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_1_row_1')">
+                </td>
+                <td>
+                    <input type="text" id="letter_1_row_1"  maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_2_row_1')">
+                </td>
+                <td>
+                    <input type="text" id="letter_2_row_1" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_3_row_1')">
+                </td>
+                <td>
+                    <input type="text" id="letter_3_row_1" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_4_row_1')">
+                </td>
+                <td>
+                    <input type="text" id="letter_4_row_1" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_0_row_1')">
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <input type="text" id="letter_0_row_2" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_1_row_2')">
+                </td>
+                <td>
+                    <input type="text" id="letter_1_row_2"  maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_2_row_2')">
+                </td>
+                <td>
+                    <input type="text" id="letter_2_row_2" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_3_row_2')">
+                </td>
+                <td>
+                    <input type="text" id="letter_3_row_2" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_4_row_2')">
+                </td>
+                <td>
+                    <input type="text" id="letter_4_row_2" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_0_row_2')">
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <input type="text" id="letter_0_row_3" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_1_row_3')">
+                </td>
+                <td>
+                    <input type="text" id="letter_1_row_3"  maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_2_row_3')">
+                </td>
+                <td>
+                    <input type="text" id="letter_2_row_3" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_3_row_3')">
+                </td>
+                <td>
+                    <input type="text" id="letter_3_row_3" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_4_row_3')">
+                </td>
+                <td>
+                    <input type="text" id="letter_4_row_3" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_0_row_3')">
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <input type="text" id="letter_0_row_4" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_1_row_4')">
+                </td>
+                <td>
+                    <input type="text" id="letter_1_row_4"  maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_2_row_4')">
+                </td>
+                <td>
+                    <input type="text" id="letter_2_row_4" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_3_row_4')">
+                </td>
+                <td>
+                    <input type="text" id="letter_3_row_4" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_4_row_4')">
+                </td>
+                <td>
+                    <input type="text" id="letter_4_row_4" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_0_row_4')">
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <input type="text" id="letter_0_row_5" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_1_row_5')">
+                </td>
+                <td>
+                    <input type="text" id="letter_1_row_5"  maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_2_row_5')">
+                </td>
+                <td>
+                    <input type="text" id="letter_2_row_5" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_3_row_5')">
+                </td>
+                <td>
+                    <input type="text" id="letter_3_row_5" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_4_row_5')">
+                </td>
+                <td>
+                    <input type="text" id="letter_4_row_5" maxlength="1" onkeyup="lettersOnlyAndNextBox(this, 'letter_0_row_5')">
+                </td>
+            </tr> 
+        </table>
+    </main>
+
+    
+    
+</body>
+</html>
